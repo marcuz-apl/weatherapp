@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--color-slate-950);
+  color: var(--color-slate-100);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: clip;
+}
+
+/* Map must never trap or block page scrolling on touch devices */
+.leaflet-container {
+  touch-action: pan-x pan-y;
+}
+
+.leaflet-control-attribution {
+  background: rgb(2 6 23 / 0.75) !important;
+  color: #94a3b8 !important;
+  font-size: 10px;
+  border-radius: 6px 0 0 0;
+}
+.leaflet-control-attribution a {
+  color: #7dd3fc !important;
+}
+
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.4) !important;
+}
+.leaflet-control-zoom a {
+  background: rgb(2 6 23 / 0.85) !important;
+  color: #e2e8f0 !important;
+  border-color: rgb(255 255 255 / 0.12) !important;
+  backdrop-filter: blur(6px);
+  width: 44px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+  font-size: 18px !important;
+}
+
+.leaflet-touch .leaflet-control-zoom a {
+  width: 44px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+}
+
+.leaflet-control-attribution {
+  padding: 2px 6px !important;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: rgb(2 6 23 / 0.94) !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.5) !important;
+}

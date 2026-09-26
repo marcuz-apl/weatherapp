@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+dist-ssr/
+build/
+*.local          # vite local env overrides
+.vite/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Editor / IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Caches
+.cache/
+.parcel-cache/
+.vitepress/cache/
+.eslintcache
+.stylelintcache
+
+# Test / coverage
+coverage/
+*.lcov
+
+# Temp scratch files
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+*.rej
